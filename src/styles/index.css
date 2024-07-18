@@ -1,0 +1,19 @@
+.app {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80vh;
+    margin: 10vh auto;
+}
+
+.card-img-top {
+    height: 21rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+    .app {
+        min-height: 100vh;
+        max-width: 100%;
+        margin: 0;
+    }
+}
