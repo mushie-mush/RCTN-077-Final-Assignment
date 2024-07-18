@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { createContext, useEffect, useReducer, useState } from 'react'
 import Movie from './Movie'
 import Header from './Header'
@@ -86,7 +87,7 @@ function App() {
                         ))}
                         {!movies && (
                             <div class="alert alert-danger w-100 my-auto" role="alert">
-                                No movies found!
+                                No movies found! <a href='#' className='link-underline-primary' onClick={() => showFavorites()}>Show favorites</a>
                             </div>
                         )}
                     </div>
