@@ -84,6 +84,11 @@ function App() {
                         {movies?.map(movie => (
                             <Movie movie={movie} key={movie.imdbID}></Movie>
                         ))}
+                        {!movies && (
+                            <div class="alert alert-danger w-100 my-auto" role="alert">
+                                No movies found!
+                            </div>
+                        )}
                     </div>
                 </div>
             </main>
